@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello Plus - Release Notes</title>
+    <link rel="icon" type="image/x-icon" href="../16.png" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="/trello-plus" class="back-button custom-underline">Back</a>
+      <h1>Release Notes for Trello Plus</h1>
+      <table>
+        <tr>
+          <th>Version</th>
+          <th>Date</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td>1.6.7</td>
+          <td>22 December 2024</td>
+          <td>
+            <p>Copy and Formatting Fixes</p>
+            <ul>
+              <li>Fix the copy and formatting for the popup.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.6</td>
+          <td>17 December 2024</td>
+          <td>
+            <p>Design Fixes</p>
+            <ul>
+              <li>Fix the colour of the click to copy link.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.5</td>
+          <td>17 December 2024</td>
+          <td>
+            <p>Bug Fixes</p>
+            <ul>
+              <li>
+                Fix the issue where lists and cards that are not in the viewport were not being added to the total card
+                count and estimation.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.4</td>
+          <td>12 December 2024</td>
+          <td>
+            <p>Tool Tips</p>
+            <ul>
+              <li>Added tool tips to the expand all and collapse all buttons and to the individual list buttons.</li>
+              <li>Added version number to the extension popup.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.3</td>
+          <td>12 December 2024</td>
+          <td>
+            <p>Formatting Fixes</p>
+            <ul>
+              <li>Formatted the card age.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.2</td>
+          <td>12 December 2024</td>
+          <td>
+            <p>Bug Fixes</p>
+            <ul>
+              <li>Fixed the starting point for the celebration animation to off the bottom of the screen.</li>
+              <li>Fixed the about link in the extension popup to go to the correct page.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.1</td>
+          <td>5 December 2024</td>
+          <td>
+            <p>New Feature - Auto List Collapse, Bug Fixes</p>
+            <ul>
+              <li>
+                Auto List Collapse
+                <ul>
+                  <li>When enabled, if a list is empty, then it will collapse automatically.</li>
+                  <li>
+                    Sticky lists will still take priority over this, e.g. if you have manually collapsed the list in the
+                    past, then it will remain collapsed, even if the feature is disabled.
+                  </li>
+                  <li>Off by default but you can enable and disable this in the extension popup.</li>
+                </ul>
+              </li>
+              <li>
+                Fixed the issue with the visibility of the cards where lists and cards not visible in the viewport when
+                becoming visible where not formatting properly.
+              </li>
+              <li>
+                Fixed the issue with the work in progress limit where the color was not being removed when the limit was
+                removed from the list name.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.6.0</td>
+          <td>4 December 2024</td>
+          <td>
+            <p>Visbility Fix, Work in Progress Feature</p>
+            <ul>
+              <li>
+                Thanks to BeachingLifing on Reddit for finding the issue with the card visibility. Much appreciated!
+                <br />
+                <br />
+                <strong>The issue:</strong> If one had a long list of cards, the cards at the bottom were not showing
+                the ID, age or estimation.
+                <br />
+                <br />
+                This would also affect users who had several lists where one had to scroll right to see those lists.
+                Again the card information would not show when visible.
+                <br />
+                <br />
+                The knock on effect is that the total estimation and completed estimation fields were incorrect.
+                <br />
+                <br />
+                I have applied a solution, so let's see how we go.
+              </li>
+              <li>
+                We are also releasing a new feature that allows you to set a work in progress limit.
+                <br />
+                <br />
+                If one adds a card limit to the name of the list then the list background will change if the number of
+                cards in the list is greater than the limit. The color can be selected from the extension popup.
+                <br />
+                <br />
+                <strong>Example:</strong> (4) My List Name
+                <br />
+                <br />
+                If you have 4 cards in the list and then add a 5th card, the list background will change.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.5.0</td>
+          <td>17 November 2024</td>
+          <td>
+            <p>Added Estimation Fields</p>
+            <ul>
+              <li>
+                Decided to add fields to the back of the card to allow for more flexibility in how you use estimation
+              </li>
+              <li>
+                You can now add whole or decimal numbers to the completed and total fields on the back of the card
+              </li>
+              <li>
+                This will automatically add the estimation to the card title. Once your estimate is in the card title
+                you can close the back of the card
+              </li>
+              <li>All data (estimates) are stored with Trello</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.4.0</td>
+          <td>13 November 2024</td>
+          <td>
+            <p>Added more advanced ways of doing things</p>
+            <ul>
+              <li>Added observer pattern to allow for more dynamic behaviour</li>
+              <li>Added event bus to allow for better communication between classes</li>
+              <li>Added more detailed error handling and logging to help with debugging</li>
+              <li>
+                Still not too sure about the observer pattern, but it's a start, tried to make sure it closes properly
+                to prevent memory leaks
+              </li>
+              <li>Refactored code to improve readability and maintainability</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.3.0</td>
+          <td>28 October 2024</td>
+          <td>
+            <p>Moved to Object Oriented Architecture and Design</p>
+            <ul>
+              <li>
+                This is a big step forward for Trello Plus, it will be easier to maintain and extend in the future
+              </li>
+              <li>
+                Modified the Celebration function to be more dynamic with the ability to select which list to celebrate
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.2.0</td>
+          <td>24 October 2024</td>
+          <td>
+            <p>Added a new feature - Let's Cellebrate!</p>
+            <ul>
+              <li>When you move a card to the last list on your board, a celebration animation will play</li>
+              <li>You can turn this off in the extension popup</li>
+              <li>
+                Let me know on our offical subreddit
+                <a href="https://www.reddit.com/r/trelloplus/" target="_blank">trelloplus</a> if you'd like to customise
+                the animation
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.1.0</td>
+          <td>23 October 2024</td>
+          <td>
+            <p>Bug fixes and improvements</p>
+            <ul>
+              <li>Fixed that one thing that was driving you absolutely bananas</li>
+              <li>Added more detailed error messages</li>
+              <li>Other minor improvements</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>1.0.1</td>
+          <td>21 October 2024</td>
+          <td>
+            <p>Updated permissions</p>
+          </td>
+        </tr>
+        <tr>
+          <td>1.0.0</td>
+          <td>19 October 2024</td>
+          <td>
+            <p>Initial release</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
